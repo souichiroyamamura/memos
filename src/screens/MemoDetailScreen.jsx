@@ -1,6 +1,7 @@
 import React from 'react';
-// eslint-disable-next-line object-curly-newline
-import { View, ScrollView, Text, StyleSheet } from 'react-native';
+import {
+  View, ScrollView, Text, StyleSheet,
+} from 'react-native';
 
 import AppBar from '../components/AppBar';
 import CircleButton from '../components/CircleButton';
@@ -20,7 +21,7 @@ export default function MemoDetailScreen() {
           本文用なので使い方を間違えると不自然になるかも。
         </Text>
       </ScrollView>
-      <CircleButton style={{ top: 160 }}>+</CircleButton>
+      <CircleButton style={{ top: 160 }} name="edit-2" />
     </View>
   );
 }
